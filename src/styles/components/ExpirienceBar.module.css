@@ -1,0 +1,38 @@
+.expirienceBar {
+    display    : flex;
+    align-items: center;
+}
+
+.expirienceBar span {
+    font-size: 1rem;
+}
+
+.expirienceBar>div {
+    flex                 : 1;
+    height               : 4px;
+    border-radius        : 4px;
+    background-color     : var(--gray-line);
+    margin               : 0 1.5rem;
+    position             : relative;
+    -webkit-border-radius: 4px;
+    -moz-border-radius   : 4px;
+    -ms-border-radius    : 4px;
+    -o-border-radius     : 4px;
+}
+
+.expirienceBar>div>div {
+    height               : 4px;
+    border-radius        : 4px;
+    background-color     : var(--green);
+    -webkit-border-radius: 4px;
+    -moz-border-radius   : 4px;
+    -ms-border-radius    : 4px;
+    -o-border-radius     : 4px;
+}
+
+span.currentExpirience {
+    position : absolute;
+    top      : 12px;
+    transform: translateX(-50%);
+    /*Centraliza o elemento que serelaciona à âncora (50% no eixo X)*/
+}

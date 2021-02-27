@@ -74,8 +74,8 @@ export function ChallengesProvider({ children }: ChallengesProviderProps) {
         let finalExpirience = currentExpirience + amount;
 
         if (finalExpirience >= expirienceToNextLevel) {
-            finalExpirience = finalExpirience + expirienceToNextLevel;
-            levelUp;
+            finalExpirience = finalExpirience - expirienceToNextLevel;
+            levelUp();
         }
 
         setCurrentExpirience(finalExpirience);
